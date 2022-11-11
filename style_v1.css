@@ -25,7 +25,7 @@
 .buttons{
     margin-top: 30px;
 }
-#button_1, #button_2, #button_3, #button_4 {
+#button_0, #button_1, #button_2, #button_3 {
     background-color: #01BBFF;
     width: 250px;
     font-size: 20px;
@@ -34,10 +34,10 @@
     margin: 10px 40px 10px 0px;
     padding: 10px 10px;
 }
-#button_1:hover, #button_2:hover, #button_3:hover, #button_4:hover {
+#button_0:hover, #button_1:hover, #button_2:hover, #button_3:hover {
     cursor: pointer;
     background-color: darkblue;
 }
-#button_1:focus, #button_2:focus, #button_3:focus, #button_4:focus {
+#button_0:focus, #button_1:focus, #button_2:focus, #button_3:focus {
     outline: 0;
 }
