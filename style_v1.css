@@ -1,0 +1,43 @@
+.container{
+    margin: auto;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+/* start button control */
+.start_button{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: plum;
+}
+.start_button:hover{
+    background-color: darkred;
+}
+
+/* question buttons control */
+.buttons{
+    margin-top: 30px;
+}
+#button_1, #button_2, #button_3, #button_4 {
+    background-color: #01BBFF;
+    width: 250px;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #1D3C6A;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+}
+#button_1:hover, #button_2:hover, #button_3:hover, #button_4:hover {
+    cursor: pointer;
+    background-color: darkblue;
+}
+#button_1:focus, #button_2:focus, #button_3:focus, #button_4:focus {
+    outline: 0;
+}
