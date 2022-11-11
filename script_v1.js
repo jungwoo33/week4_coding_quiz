@@ -16,7 +16,7 @@ var my_questions = [
     },
     {
         question: "The condition in an if/else statement is enclosed within _____.",
-        answers:[
+        choices:[
             '1. quotes',
             '2. curly brackets',
             '3. jw...',
@@ -38,27 +38,41 @@ function console_test(){
 // end of question creation ============================================ /
 
 // create question displaying function ================================= /
-function show_questions(questions, quiz_container){
+//function show_questions(questions, quiz_container){
+function show_questions(){    
     // we'll need a place to store the output and the answer choices
-    var output = [];
-    var answers;
+    //var output = [];
+    //var answers;
 
     // for eqch question...
     for(var i=0; i<my_questions.length; i++){
         // first reset the list of answers
-        answers = [];
+        //answers = [];
 
+        id_question.textContent = my_questions[i].question;
+        for(var j=0; j<4; j++){
+            var element = document.getElementById("choice_"+j);
+            element.textContent = my_questions[i].choices[j];
+            console.log(my_questions[i].choices[j]);    
+        }
+
+        // here I need to call answer selection process
+
+
+        
     }
 }
 // End of question displaying function ================================= /
 
 function generate_quiz(){
-    function show_questions(){
+    // call show_questions()
+    show_questions();
 
-    }
-    function show_results(){
-
-    }
+    //function show_questions(){
+    //}
+    // call show_results
+    //function show_results(){
+    //}
 }
 
 
@@ -70,4 +84,5 @@ function generate_quiz(){
 // Add event listener to "start_button" when "click" it.
 // When you "click" the button, call "console_test" function
 //generateBtn.addEventListener("click", write_password);
-click_button.addEventListener("click", console_test);
+//click_button.addEventListener("click", console_test);
+click_button.addEventListener("click", generate_quiz);
