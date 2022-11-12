@@ -2,6 +2,12 @@
 var click_button = document.querySelector("#start_quiz"); // select the "Start Quiz" button
 var id_question = document.querySelector("#question");
 
+var class_buttons = document.querySelector(".buttons");
+var id_button_0 = document.querySelector("#button_0");
+var id_button_1 = document.querySelector("#button_1");
+var id_button_2 = document.querySelector("#button_2");
+var id_button_3 = document.querySelector("#button_3");
+
 // create questions ===================================================== /
 var my_questions = [
     {
@@ -43,25 +49,46 @@ function show_questions(){
     // we'll need a place to store the output and the answer choices
     //var output = [];
     //var answers;
-
+    
     // for eqch question...
     for(var i=0; i<my_questions.length; i++){
         // first reset the list of answers
         //answers = [];
-
+        var choice_length = my_questions[i].choices.length; //each question's choice length; This will allow me to have different length choices.
         id_question.textContent = my_questions[i].question;
-        for(var j=0; j<4; j++){
+        for(var j=0; j<choice_length; j++){
             var element = document.getElementById("choice_"+j);
             element.textContent = my_questions[i].choices[j];
             console.log(my_questions[i].choices[j]);    
         }
-
         // here I need to call answer selection process
 
+        if(){ // if the answer is selected, go to the next loop
 
-        
+        }else{
+            // pause until receive answer...
+        }
+
+        user_selection();        
+
+
+
     }
 }
+
+// I am following the algorithm from 20-Stu_Data-Attributes:
+function user_selection(event){
+    var element = event.target; // find the clicked element
+    var user_answer = [];
+    if(element.matches(".box")){ // if the clicked element is one of the "box"
+        user_answer = element.dataset.number; // one of 0 ~ 3
+        console.log(user_answer);
+    }
+}
+class_buttons.addEventListener("click",user_selection);
+
+
+
 // End of question displaying function ================================= /
 
 function generate_quiz(){
