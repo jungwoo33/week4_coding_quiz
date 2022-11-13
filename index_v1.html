@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Coding Quize</title>
+        <link rel="stylesheet" href="style_v1.css"/>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 id="intro_head">Coding Quiz Challenge</h1>
+            <p id="intro_body">Try to answer the following code-related questions within the time limit. 
+                Keep in mind that incorrect answers will pernalize your score time by ten seconds!</p>
+            
+            <button id="start_quiz" class="start_button">Start Quiz</button>
+            
+            <!-- empty at the beginning but it will be added from JavaScript -->
+            <div id="question_container">
+                <p id="question">My question will be here</p>
+                <!-- each question will have 4 questions 
+                later, I will update this with a list....
+                -->
+                <div class="buttons">
+                    <!-- later I will delete "jw1"; this is just a placeholder -->
+                    <button class="box" id="button_0" data-number="0"><span id="choice_0">jw1</span></button>
+                    <button class="box" id="button_1" data-number="1"><span id="choice_1">jw2</span></button>
+                    <button class="box" id="button_2" data-number="2"><span id="choice_2">jw3</span></button>
+                    <button class="box" id="button_3" data-number="3"><span id="choice_3">jw4</span></button>
+                </div>
+            </div>
+            
+        </div>
+
+        <script src="./script_v1.js"></script>
+    </body>
+</html>
