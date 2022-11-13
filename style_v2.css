@@ -1,0 +1,78 @@
+.container{
+    margin: auto;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+/* start button control */
+.start_button{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: plum;
+}
+.start_button:hover{
+    background-color: darkred;
+}
+
+/* question buttons control */
+.buttons{
+    margin-top: 30px;
+}
+#button_0, #button_1, #button_2, #button_3 {
+    background-color: #01BBFF;
+    width: 250px;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #1D3C6A;
+    margin: 10px 40px 10px 0px;
+    padding: 10px 10px;
+}
+#button_0:hover, #button_1:hover, #button_2:hover, #button_3:hover {
+    cursor: pointer;
+    background-color: darkblue;
+}
+#button_0:focus, #button_1:focus, #button_2:focus, #button_3:focus {
+    outline: 0;
+}
+
+
+/* <Prev> & <Next> button control */
+.button {
+    border:4px solid;
+    border-radius:5px;
+    width: 40px;
+    padding-left:5px;
+    padding-right: 5px;
+    position: relative;
+    /*float:right;*/
+    text-align: center;
+    display: inline-block;
+
+    background-color: #DCDCDC;
+    color: black;
+    margin: 0 2px 0 2px;
+}
+.button.active {
+    background-color: #F8F8FF;
+    color: #525252;
+}
+/*
+button {
+    position: relative;
+    float:right;
+}
+*/
+.button a {
+    text-decoration: none;
+    color: black;
+}
+#prev {
+    display:none;
+}
