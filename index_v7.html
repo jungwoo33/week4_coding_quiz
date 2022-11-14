@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Coding Quize</title>
+        <link rel="stylesheet" href="style_v7.css"/>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 id="intro_head">Coding Quiz Challenge</h1>
+            <p id="intro_body">
+                Try to answer the following code-related <span class="ten">10</span> questions within the time limit (<span class="sixty">60</span> sec).<br>
+                NOTE: Incorrect answers will pernalize your score time by <span class="ten">10</span> seconds!
+            </p> 
+            <button id="start_quiz" class="start_button">Start/Restart Quiz</button>
+
+            <div id="quiz_container">
+                <div id="quiz">
+                    <!--
+                    <p id="question"></p> < !-- question will be here-- >
+                    <ul id="question_list"> < !-- button list will be here-- >
+                    </ul>
+                    -->
+                </div>
+                
+                <!--
+                    !! I will not include this...
+                <div id="correct_wrong">
+                    <p></p>
+                </div>
+                -->
+    
+                <!-- include <Next> & <Prev> buttons -->
+                <div class="button" id="prev"><a href="#">Prev</a></div>
+                <div class="button" id="next"><a href="#">Next</a></div>
+    
+                <div id="stopwatch">
+                    <p></p>
+                </div>    
+            </div>            
+        </div>
+        <!--<script src="./script_v7.js"></script>-->
+        <script type="module" src="./script_v7.js"></script>
+    </body>
+</html>
