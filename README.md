@@ -20,7 +20,7 @@ This code includes following codes:
 Note: All previous versions are stored: ./old_codes; I am keeping other files to show the progress.
 
 ## 4. Application results:
-Live URL: 
+Live URL: https://jungwoo33.github.io/week4_coding_quiz/
 
 ![App demo](./assets/project_description_v1.gif)
 
