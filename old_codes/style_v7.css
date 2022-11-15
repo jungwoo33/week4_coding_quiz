@@ -1,0 +1,108 @@
+.body{
+    width: 100%;
+}
+.container{
+    margin: auto;
+    width: 70%;
+    height: 100px;
+    text-align: center;
+}
+.ten, .sixty{
+    font-weight: bold;
+    color: red;
+}
+/* start button control ================================================== */
+.start_button{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: plum;
+}
+.start_button:hover{
+    background-color: darkred;
+}
+
+/* Quiz ul list control =================================================== */
+#quiz_container{
+    border: burlywood;
+    background-color: aqua;
+}
+#quiz p{
+    text-align: left;
+    font-weight: bold;
+}
+ul{
+    text-align: left;
+    list-style: none; /* remove bullets */
+}
+/* increase space between each item 
+& increase space between radio button and text 
+& increase radio button size to make easy selection */
+li{
+    padding: 10px;
+}
+#radio_button{
+    margin-right: 10px;
+}
+#quiz h2{
+    text-align: left;
+}
+#radio_button{
+    transform: scale(1.5);
+}
+
+/* I will skip this in this version
+#correct_wrong {
+    text-align: left;
+    font-style: italic;
+}
+*/
+
+/* <Prev> & <Next> button control ======================================== */
+.button {
+    border:3px solid;
+    border-color: blue;
+    border-radius:5px;
+    width: 70px;
+    padding:5px;
+    position: relative;
+    /*float:right;*/
+    text-align: center;
+    display: inline-block;
+
+    background-color: #DCDCDC;
+    color: black;
+    margin: 0 2px 0 2px;
+}
+.button.active {
+    background-color: #F8F8FF;
+    color: #525252;
+}
+.button:hover{
+    background-color: yellow;    
+}
+.button a {
+    text-decoration: none;
+    color: black;
+}
+
+/* do not show <Prev> and <Next> button at the beginning */
+#prev {
+    display: none;
+}
+#next {
+    display: none;
+}
+
+
+/* submit_button will be added in JavaScript ============================== */
+#submit_button {
+    margin-left: 2em;
+}
+
+
