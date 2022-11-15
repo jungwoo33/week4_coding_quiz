@@ -11,13 +11,13 @@ A user can take the exam again from the beginning as clicking "Start/Restart Qui
 
 ## 3. Source Code Description
 This code includes following codes:
-* _indexv7.html (v7): main HTML file_ 
-* _style.css (v7): CSS style sheet_
-* _script.js (v7): JavaScript file_ 
+* _index.html: main HTML file_ 
+* _style.css: CSS style sheet_
+* _script.js: JavaScript file_ 
 * _my-questions.js: question declaration file_
 * _package.json: module declaration file_
 
-Note: There are series versions (v0 ~ v7), and the *_v7 are the final ones. I am keeping other files to show the progress.
+Note: All previous versions are stored: ./old_codes; I am keeping other files to show the progress.
 
 ## 4. Application results:
 Live URL: 
