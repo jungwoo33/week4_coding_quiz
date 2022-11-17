@@ -140,7 +140,7 @@ function display_next_question(){
         // delete previous question and show the final result
         show_score();      
         reset_timer();
-        stopwatch.children[0].textContent = " "
+        //stopwatch.children[0].textContent = " "
     }
 }
 // End of question displaying function ================================= /
@@ -217,12 +217,16 @@ function retrieve_score(){
 function start_timer(){
     if(timer_status === "off"){
         // if timer is "off" turn it on
+        stopwatch.style.display = "block"; // show stopwatch
+        stopwatch.children[0].textContent = ""; // hide any remaining text
+
         time_left = 60;
         timer_status = setInterval(show_stopwatch,1000);
         function show_stopwatch(){
             if(time_left > 0){
                 stopwatch.children[0].textContent = "Time Left: " + time_left + " sec";
                 time_left --;
+                console.log('jw')
             }else{
                 show_score();
                 stopwatch.children[0].textContent = "Time Over!";
